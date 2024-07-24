@@ -1,16 +1,4 @@
 (async function() {
-    // Password yang benar (misalnya 'password123')
-    const correctPassword = 'Di beli vpsnya anjeng';
-
-    // Minta password dari pengguna
-    const userPassword = prompt('Masukkan password untuk melanjutkan:');
-
-    // Verifikasi password
-    if (userPassword !== correctPassword) {
-        alert('Password salah. Skrip tidak akan dijalankan.');
-        return;
-    }
-
     try {
         // URL ke raw file JavaScript di GitHub
         const url = 'https://raw.githubusercontent.com/LFG-AAI/Code/main/1.js';
