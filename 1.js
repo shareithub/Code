@@ -10,8 +10,12 @@
         // Ambil isi file sebagai teks
         const scriptText = await response.text();
 
-        // Eksekusi kode JavaScript
-        eval(scriptText); // atau gunakan new Function(scriptText) jika lebih aman
+        // Buat elemen <script> dan tambahkan ke dokumen
+        const scriptElement = document.createElement('script');
+        scriptElement.textContent = scriptText;
+        document.head.appendChild(scriptElement);
+        document.head.removeChild(scriptElement); // Opsional: hapus elemen setelah eksekusi
+
     } catch (error) {
         console.error('Error fetching or executing script:', error);
     }
