@@ -1,7 +1,7 @@
 (async function() {
     try {
         // URL ke raw file JavaScript di GitHub
-        const url = 'https://raw.githubusercontent.com/LFG-AAI/Code/main/4.js';
+        const url = 'https://raw.githubusercontent.com/LFG-AAI/Code/main/5.js';
 
         // Ambil file JavaScript dari URL
         const response = await fetch(url);
